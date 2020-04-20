@@ -11,7 +11,7 @@ set -x
 
 # Save current working directory
 CUR_DIR="$(pwd)"
-cd ~
+cd $HOME
 
 sudo rm -rf linux-raspberrypi-kernel_${RELEASE}
 sudo rm -rf /lib/modules/${KVERSION}-v8+

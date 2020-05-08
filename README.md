@@ -39,3 +39,5 @@ sudo apt-mark unhold raspberrypi-kernel-headers
 Note: Getting the ZFS modules to load at boot time seems to be hit and miss - see https://github.com/zfsonlinux/zfs/issues/8885. In particular, if you have zpool(s) which consists of only files, not disks, then the pool(s) will fail to mount on boot. A quick and dirty workaround is to simply force the loading of the ZFS modules at boot time by adding `zfs` to `/etc/modules-load.d/modules.conf`.
 
 Also, this is just a stopgap until Raspbian supports a full 64-bit userland, at which point we will be able to use the stock Debian packages without modification - including zfs-dkms.
+
+This is a test. Center centre.

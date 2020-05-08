@@ -8,5 +8,5 @@ jobs:
     # This job runs on Linux
     runs-on: ubuntu-latest
     steps:
-      name: Spellcheck Action
+    - name: Spellcheck Action
       uses: rojopolis/spellcheck-github-actions@0.2.0

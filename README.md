@@ -1,7 +1,7 @@
 # zfs-for-pi
 ZFS for the Raspberry Pi.
 
-Based on Alexey Tsarev's gist at https://gist.github.com/Alexey-Tsarev/d5809e353e756c5ce2d49363ed63df35
+Based on Alexey Tsarev's gist [here](https://gist.github.com/Alexey-Tsarev/d5809e353e756c5ce2d49363ed63df35).
 
 This repository contains build scripts to allow building ZFS on Raspbian. It builds ZFS both as 64-bit modules and as 32-bit modules. It is recommended that under normal circumstances your system should use the 64-bit kernel only for ZFS. The reason the 32-bit kernel modules are built and installed is that the rest of the 32-bit build is required because Raspbian has a 32-bit userland, and the easiest way to get those parts is to simply build the whole 32-bit thing.
 

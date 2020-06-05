@@ -9,7 +9,7 @@ matrix:
   - pyspelling.filters.markdown
   dictionary:
     wordlists:
-    - wordlist.txt
+    - .wordlist.txt
     output: wordlist.dic
     encoding: utf-8
   default_encoding: utf-8

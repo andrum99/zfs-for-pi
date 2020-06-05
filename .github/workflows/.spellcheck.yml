@@ -1,9 +1,11 @@
-name: spellchecker
+name: spellcheck
 on: [push, pull_request]
 jobs:
-  build:
+  spellcheck:
     name: Markdown spellchecker
     runs-on: ubuntu-latest
     steps:
-    - name: GitHub Spellcheck Action
+      - name: Check out code.
+      uses: actions/checkout@v2
+      - name: GitHub Spellcheck Action
       uses: rojopolis/spellcheck-github-actions@0.5.0

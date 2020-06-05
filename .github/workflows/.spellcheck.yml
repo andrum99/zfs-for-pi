@@ -1,12 +1,31 @@
-name: Check Spelling
-on: [push, pull_request]
+matrix:
+- name: Markdown
+  aspell:
+    lang: en_GB
+  dictionary:
+    wordlists:
+    - .wordlist.txt
+    encoding: utf-8
+  pipeline:
+  - pyspelling.filters.markdown:
+  - pyspelling.filters.html:
+    comments: false
+    ignores:
+    - code
+    - pre
+  sources:
+  - '**/*.md'
+  default_encoding: utf-8
 
-jobs:
-  build:
+#name: Check Spelling
+#on: [push, pull_request]
+
+#jobs:
+  #build:
     # Job name
-    name: spell check
+    #name: spell check
     # This job runs on Linux
-    runs-on: ubuntu-latest
-    steps:
-    - name: GitHub Spellcheck Action
-      uses: rojopolis/spellcheck-github-actions@0.5.0
+    #runs-on: ubuntu-latest
+    #steps:
+    #- name: GitHub Spellcheck Action
+    #  uses: rojopolis/spellcheck-github-actions@0.5.0

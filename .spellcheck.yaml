@@ -2,7 +2,7 @@ spellchecker: aspell
 matrix:
 - name: markdown
   aspell:
-    lang: en_GB
+    lang: en
   sources:
   - '**/*.md'
   pipeline:

@@ -1,21 +1,27 @@
-matrix:
-- name: Markdown
-  aspell:
-    lang: en_GB
-  dictionary:
-    wordlists:
-    - .wordlist.txt
-    encoding: utf-8
-  pipeline:
-  - pyspelling.filters.markdown:
-  - pyspelling.filters.html:
-    comments: false
-    ignores:
-    - code
-    - pre
-  sources:
-  - '**/*.md'
-  default_encoding: utf-8
+name: spellchecker
+on: [push, pull_request]
+jobs:
+  build:
+    name: Markdown spellchecker
+    runs-on: ubuntu-latest
+    steps:
+      - name: Markdown
+      aspell:
+      lang: en_GB
+    dictionary:
+      wordlists:
+      - .wordlist.txt
+      encoding: utf-8
+    pipeline:
+    - pyspelling.filters.markdown:
+    - pyspelling.filters.html:
+      comments: false
+      ignores:
+      - code
+      - pre
+    sources:
+    - '**/*.md'
+    default_encoding: utf-8
 
 #name: Check Spelling
 #on: [push, pull_request]

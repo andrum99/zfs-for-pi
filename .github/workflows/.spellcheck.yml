@@ -7,12 +7,12 @@ jobs:
     steps:
     - name: GitHub Spellcheck Action
       uses: rojopolis/spellcheck-github-actions@0.5.0
-      aspell:
-        lang: en_GB
-      dictionary:
-        wordlists:
-        - .wordlist.txt
-        encoding: utf-8
+      #aspell:
+      #  lang: en_GB
+      #dictionary:
+      #  wordlists:
+      #  - .wordlist.txt
+      #  encoding: utf-8
       pipeline:
       - pyspelling.filters.markdown:
       - pyspelling.filters.html:

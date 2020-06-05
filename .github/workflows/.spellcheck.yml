@@ -5,7 +5,7 @@ jobs:
     name: Markdown spellchecker
     runs-on: ubuntu-latest
     steps:
-      - name: testing123
+      - name: GitHub Spellcheck Action
       uses: rojopolis/spellcheck-github-actions@0.5.0
       aspell:
       lang: en_GB

@@ -1,5 +1,5 @@
 name: spellcheck
-on: [push, pull_request]
+on: [push]
 jobs:
   spellcheck:
     name: Markdown spellchecker

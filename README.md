@@ -1,3 +1,5 @@
+**This repo is now read-only as I have switched to using Ubuntu which includes ZFS, so have no need for this. I'm leaving this here in case anyone finds it useful.**
+
 # zfs-for-pi
 ZFS for the Raspberry Pi.
 
